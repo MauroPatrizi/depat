@@ -2,7 +2,7 @@
 # `#0969DA` Projet final de l'AEC en gestion de réseaux et sécurité des systèmes
 
 ## **Domain Controller**
-### Windows Server 2019. Active Directory and internal DNS server. RODC available in the external branches, replicating AD and internal DNS services.
+Windows Server 2019. Active Directory and internal DNS server. RODC available in the external branches, replicating AD and internal DNS services.
 ### Configuration files:
 
 ## **DHCP**
