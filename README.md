@@ -3,7 +3,7 @@
 
 ## **Domain Controller**
 Windows Server 2019. Active Directory and internal DNS server. RODC available in the external branches, replicating AD and internal DNS services.
-# Configuration files:
+### Configuration files:
 
 ## **DHCP**
 ### Windows Server 2019. DHCP Server dedicated for the LAN Users.
