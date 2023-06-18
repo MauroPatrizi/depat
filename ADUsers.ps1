@@ -62,10 +62,8 @@ foreach ($ligne in $lignes)
   Add-ADPrincipalGroupMembership -Identity $Login `
                                  -MemberOf $Depart
   }
- 
- 
- 
- 
+
+
 #--- MAPPAGE DES FICHIERS PARTAGÉS ---#
   Set-ADUser -Identity $Login `
              -HomeDirectory \\fichiers\$Depart `
