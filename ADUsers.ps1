@@ -71,4 +71,3 @@ foreach ($ligne in $lignes)
              -HomeDirectory \\fichiers\$Depart `
              -HomeDrive S:
 }
-
