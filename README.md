@@ -1,6 +1,6 @@
 # **depat**
 # Projet final de l'AEC en gestion de réseaux et sécurité des systèmes
-##### _This project is just to test the acquired skills and competences of the candidates. It doesn't necessarily reflect the most efficient or practical way of designing a network._
+##### _This project is meant to test the acquired skills and competences of the candidates. It doesn't necessarily reflect the most efficient or practical way of designing a network._
 
 ## **Domain Controller**
 Windows Server 2019. Active Directory and internal DNS server. RODC available in the external branches, replicating AD and internal DNS services.
