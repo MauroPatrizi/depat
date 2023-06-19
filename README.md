@@ -24,7 +24,7 @@ Alma Linux 9. Two iSCSI Targets replicating for high availability and using a vi
 
 ## **Monitoring**
 Alma Linux 9. Nagios Core to monitor our Domain Controller and external DNS server.
-#### Configuration files (/usr/local/nagios/etc/config_depat): [hotes.cfg](hotes.cfg) [commands.cfg](commands.cfg) [services.cfg](services.cfg) [contacts.cfg](contacts.cfg) [periods.cfg](periods.cfg)
+#### Configuration files: (/usr/local/nagios/etc/config_depat) [hotes.cfg](hotes.cfg) [commands.cfg](commands.cfg) [services.cfg](services.cfg) [contacts.cfg](contacts.cfg) [periods.cfg](periods.cfg)
 
 ## **Automatisation**
 Alma Linux 9 Minimal. Automatic configuration of the Web Server with Ansible.
@@ -36,7 +36,7 @@ Debian 11. Apache Web Server, configured with Ansible. Hosted in a DMZ.
 
 ## **DNS Server (External)**
 Alma Linux 9. External DNS Server. Hosted in a DMZ.
-#### Configuration files: [named.conf](/etc/named.conf) [depat.com](/var/named/depat.com)
+#### Configuration files: [/etc/named.conf](named.conf] [/var/named/depat.com](depat.com)
 
 ## **Router/Firewall**
 Pfsense 2.6.0. Firewall, Default Gateway and VPN to 3 other external branches.
