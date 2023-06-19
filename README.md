@@ -20,7 +20,7 @@ ESXi 6.7. Hypvervisor accessing the SAN storage. Hosting docker containers repli
 
 ## **SAN**
 Alma Linux 9. Two iSCSI Targets replicating for high availability and using a virtual IP address.
-#### Configuration files: [targetcli.json](targetcli.json)
+#### Configuration files: [targetcli.json](Bind/targetcli.json)
 
 ## **Monitoring**
 Alma Linux 9. Nagios Core to monitor our Domain Controller and external DNS server.
