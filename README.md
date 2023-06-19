@@ -20,11 +20,11 @@ ESXi 6.7. Hypvervisor accessing the SAN storage. Hosting docker containers repli
 
 ## **SAN**
 Alma Linux 9. Two iSCSI Targets replicating for high availability and using a virtual IP address.
-#### Configuration files: [targetcli.json](Bind/targetcli.json)
+#### Configuration files: [targetcli.json](targetcli.json)
 
 ## **Monitoring**
 Alma Linux 9. Nagios Core to monitor our Domain Controller and external DNS server.
-#### Configuration files: (/usr/local/nagios/etc/config_depat) [hotes.cfg](hotes.cfg) [commands.cfg](commands.cfg) [services.cfg](services.cfg) [contacts.cfg](contacts.cfg) [periods.cfg](periods.cfg)
+#### Configuration files: (/usr/local/nagios/etc/config_depat) [hotes.cfg](Nagios/hotes.cfg) [commands.cfg](Nagios/commands.cfg) [services.cfg](Nagios/services.cfg) [contacts.cfg](Nagios/contacts.cfg) [periods.cfg](Nagios/periods.cfg)
 
 ## **Automatisation**
 Alma Linux 9 Minimal. Automatic configuration of the Web Server with Ansible.
@@ -35,8 +35,8 @@ Debian 11. Apache Web Server, configured with Ansible. Hosted in a DMZ.
 #### Configuration files:
 
 ## **DNS Server (External)**
-Alma Linux 9. External DNS Server. Hosted in a DMZ.
-#### Configuration files: [/etc/named.conf](named.conf) [/var/named/depat.com](depat.com)
+Alma Linux 9. External Bind DNS Server. Hosted in a DMZ.
+#### Configuration files: [/etc/named.conf](Bind/named.conf) [/var/named/depat.com](Bind/depat.com)
 
 ## **Router/Firewall**
 Pfsense 2.6.0. Firewall, Default Gateway and VPN to 3 other external branches.
