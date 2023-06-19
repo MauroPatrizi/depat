@@ -1,5 +1,5 @@
 # Projet final de l'AEC en gestion de réseaux et sécurité des systèmes
-# Owners: De Pessemier Renaud and Patrizi Mauro
+## Owners: De Pessemier Renaud and Patrizi Mauro
 ##### _This project is meant to test the acquired skills and competences of the candidates. It doesn't necessarily reflect the most efficient or practical way of designing a network._
 
 ## **Domain Controller**
@@ -24,7 +24,7 @@ Alma Linux 9. Two iSCSI Targets replicating for high availability and using a vi
 
 ## **Monitoring**
 Alma Linux 9. Nagios Core to monitor our Domain Controller and external DNS server.
-#### Configuration files: [hotes.cfg](/usr/local/nagios/etc/config_depat/hotes.cfg) [commands.cfg](/usr/local/nagios/etc/config_depat/commands.cfg) [services.cfg](/usr/local/nagios/etc/config_depat//usr/local/nagios/etc/config_depat/services.cfg) [contacts.cfg](/usr/local/nagios/etc/config_depat/contacts.cfg) [periods.cfg](/usr/local/nagios/etc/config_depat/periods.cfg)
+#### Configuration files: [/usr/local/nagios/etc/config_depat/hotes.cfg](hotes.cfg) [/usr/local/nagios/etc/config_depat/commands.cfg](commands.cfg) [/usr/local/nagios/etc/config_depat//usr/local/nagios/etc/config_depat/services.cfg](services.cfg) [/usr/local/nagios/etc/config_depat/contacts.cfg](contacts.cfg) [/usr/local/nagios/etc/config_depat/periods.cfg](periods.cfg)
 
 ## **Automatisation**
 Alma Linux 9 Minimal. Automatic configuration of the Web Server with Ansible.
