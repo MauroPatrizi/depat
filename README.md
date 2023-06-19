@@ -24,7 +24,7 @@ Alma Linux 9. Two iSCSI Targets replicating for high availability and using a vi
 
 ## **Monitoring**
 Alma Linux 9. Nagios Core to monitor our Domain Controller and external DNS server.
-#### Configuration files: (/usr/local/nagios/etc/config_depat) [hotes.cfg](Nagios/hotes.cfg) [commands.cfg](Nagios/commands.cfg) [services.cfg](Nagios/services.cfg) [contacts.cfg](Nagios/contacts.cfg) [periods.cfg](Nagios/periods.cfg)
+#### Configuration files: (/usr/local/nagios/etc/config_depat) [hosts.cfg](Nagios/hosts.cfg) [commands.cfg](Nagios/commands.cfg) [services.cfg](Nagios/services.cfg) [contacts.cfg](Nagios/contacts.cfg) [periods.cfg](Nagios/periods.cfg)
 
 ## **Automatisation**
 Alma Linux 9 Minimal. Automatic configuration of the Web Server with Ansible.
