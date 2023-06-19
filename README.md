@@ -14,39 +14,6 @@ Windows Server 2019. DHCP Server dedicated for the LAN Users.
 Windows Server 2019. File Sharing Server to share a directory to each users' security group.
 #### Configuration files:
 
-E:\Partage>icacls *
-Achats DEPAT\Admins du domaine:(OI)(CI)(F)
-       BUILTIN\Administrateurs:(OI)(CI)(F)
-       DEPAT\Achats:(OI)(CI)(F)
-
-Centre d'appel DEPAT\Admins du domaine:(OI)(CI)(F)
-               DEPAT\Centre d'appel:(OI)(CI)(F)
-               BUILTIN\Administrateurs:(F)
-
-Comptabilité BUILTIN\Administrateurs:(F)
-             DEPAT\Admins du domaine:(OI)(CI)(F)
-             DEPAT\Comptabilité:(OI)(CI)(F)
-
-Finance BUILTIN\Administrateurs:(F)
-        DEPAT\Admins du domaine:(OI)(CI)(F)
-        DEPAT\Finance:(OI)(CI)(F)
-
-Informatique BUILTIN\Administrateurs:(F)
-             DEPAT\Admins du domaine:(OI)(CI)(F)
-             DEPAT\Informatique:(OI)(CI)(F)
-
-Ingénierie BUILTIN\Administrateurs:(F)
-           DEPAT\Admins du domaine:(OI)(CI)(F)
-           DEPAT\Ingénierie:(OI)(CI)(F)
-
-RH BUILTIN\Administrateurs:(F)
-   DEPAT\Admins du domaine:(OI)(CI)(F)
-   DEPAT\RH:(OI)(CI)(F)
-
-Ventes DEPAT\Admins du domaine:(OI)(CI)(F)
-       BUILTIN\Administrateurs:(OI)(CI)(F)
-       DEPAT\Ventes:(OI)(CI)(F)
-
 ## **Virtualisation**
 ESXi ???. Hypvervisor accessing the SAN storage. Hosting docker containers replicating the DNS server in case of high traffic.
 #### Configuration files:
