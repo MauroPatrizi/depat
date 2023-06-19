@@ -1,5 +1,5 @@
-# **depat**
 # Projet final de l'AEC en gestion de réseaux et sécurité des systèmes
+# Owners: De Pessemier Renaud and Patrizi Mauro
 ##### _This project is meant to test the acquired skills and competences of the candidates. It doesn't necessarily reflect the most efficient or practical way of designing a network._
 
 ## **Domain Controller**
@@ -24,7 +24,7 @@ Alma Linux 9. Two iSCSI Targets replicating for high availability and using a vi
 
 ## **Monitoring**
 Alma Linux 9. Nagios Core to monitor our Domain Controller and external DNS server.
-#### Configuration files: 
+#### Configuration files: [hotes.cfg](/usr/local/nagios/etc/config_depat/hotes.cfg) [commands.cfg](/usr/local/nagios/etc/config_depat/commands.cfg) [services.cfg](/usr/local/nagios/etc/config_depat//usr/local/nagios/etc/config_depat/services.cfg) [contacts.cfg](/usr/local/nagios/etc/config_depat/contacts.cfg) [periods.cfg](/usr/local/nagios/etc/config_depat/periods.cfg)
 
 ## **Automatisation**
 Alma Linux 9 Minimal. Automatic configuration of the Web Server with Ansible.
@@ -36,7 +36,7 @@ Debian 11. Apache Web Server, configured with Ansible. Hosted in a DMZ.
 
 ## **DNS Server (External)**
 Alma Linux 9. External DNS Server. Hosted in a DMZ.
-#### Configuration files:
+#### Configuration files: [named.conf](/etc/named.conf) [depat.com](/var/named/depat.com)
 
 ## **Router/Firewall**
 Pfsense 2.6.0. Firewall, Default Gateway and VPN to 3 other external branches.
