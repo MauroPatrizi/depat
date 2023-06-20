@@ -4,7 +4,7 @@
 
 ## **Domain Controller**
 Windows Server 2019. Active Directory and internal DNS server. RODC available in the external branches, replicating AD and internal DNS services.
-#### Configuration files and scripts: [ADUsers.ps1](ADUsers.ps1)
+#### Configuration files and scripts: [ADUsers.ps1](AD/ADUsers.ps1)
 
 ## **DHCP**
 Windows Server 2019. DHCP Server dedicated for the LAN Users.
@@ -20,7 +20,7 @@ ESXi 6.7. Hypvervisor accessing the SAN storage. Hosting docker containers repli
 
 ## **SAN**
 Alma Linux 9. Two iSCSI Targets replicating for high availability and using a virtual IP address.
-#### Configuration files: [targetcli.json](targetcli.json)
+#### Configuration files: [targetcli.json](SAN/targetcli.json)
 
 ## **Monitoring**
 Alma Linux 9. Nagios Core to monitor the Domain Controller and the external DNS server.
