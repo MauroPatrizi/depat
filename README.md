@@ -1,5 +1,5 @@
-# Projet final de l'AEC en gestion de réseaux et sécurité des systèmes
-## Owners: De Pessemier Renaud and Patrizi Mauro
+# Final Project for the AEC "Network management and systems security"
+## Owners and System Administrators: De Pessemier Renaud and Patrizi Mauro
 ##### _This project is meant to test the acquired skills and competences of the candidates. It doesn't necessarily reflect the most efficient or practical way of designing a network._
 
 ## **Domain Controller**
@@ -15,7 +15,7 @@ Windows Server 2019. File Sharing Server to share a directory to each users' sec
 #### Configuration files and scripts:
 
 ## **Virtualisation**
-ESXi 6.7. Hypvervisor accessing the SAN storage. Hosting docker containers replicating the DNS server in case of high traffic.
+ESXi 6.7. Hypvervisor accessing the SAN storage. Hosting docker containers replicating the internal DNS server in case of high traffic.
 #### Configuration files:
 
 ## **SAN**
@@ -23,7 +23,7 @@ Alma Linux 9. Two iSCSI Targets replicating for high availability and using a vi
 #### Configuration files: [targetcli.json](targetcli.json)
 
 ## **Monitoring**
-Alma Linux 9. Nagios Core to monitor our Domain Controller and external DNS server.
+Alma Linux 9. Nagios Core to monitor the Domain Controller and the external DNS server.
 #### Configuration files: (/usr/local/nagios/etc/config_depat) [hosts.cfg](Nagios/hosts.cfg) [commands.cfg](Nagios/commands.cfg) [services.cfg](Nagios/services.cfg) [contacts.cfg](Nagios/contacts.cfg) [periods.cfg](Nagios/periods.cfg)
 
 ## **Automatisation**
