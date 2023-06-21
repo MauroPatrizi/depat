@@ -36,7 +36,7 @@ Debian 11. Apache Web Server, configured with Ansible. Hosted in a DMZ.
 
 ## **DNS Server (External)**
 Alma Linux 9. External Bind DNS Server. Hosted in a DMZ.
-#### Configuration files: [/etc/named.conf](Bind/named.conf) [/var/named/depat.com](Bind/depat.com) [/var/named/db.192.168.11](db.192.168.11)
+#### Configuration files: [/etc/named.conf](Bind/named.conf) [/var/named/depat.com](Bind/depat.com) [/var/named/db.192.168.11](Bind/db.192.168.11)
 
 ## **Router/Firewall**
 Pfsense 2.6.0. Firewall, Default Gateway and VPN to 3 other external branches.
