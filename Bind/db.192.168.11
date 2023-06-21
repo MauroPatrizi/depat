@@ -1,0 +1,11 @@
+$TTL 3H
+@       IN SOA  @ depat.com. (
+                                        3       ; serial
+                                        1D      ; refresh
+                                        1H      ; retry
+                                        1W      ; expire
+                                        3H )    ; minimum
+
+
+@       IN      NS      ns1.depat.com.
+5       IN      PTR     www.depat.com.
