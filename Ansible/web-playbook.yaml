@@ -1,0 +1,28 @@
+---
+
+- hosts: webserver
+  tasks:
+    - debug:
+        var: ansible_default_ipv4.address
+        var: ansible_fqdn
+
+    - name: Instalation de apache (httpd)
+      ansible.builtin.apt:
+      name: apache2
+    
+    - name: Démarrage du service
+      ansible.builtin.systemd:
+        state: started
+        name: apache2
+    
+    - name: Enable du serveur apache
+      ansible.builtin.systemd:
+        name: apache2
+        enabled: true
+        masked: no
+
+    - name: Modifie le site web
+      template:
+        src: /home/tech/website/index.html
+        dest: /var/www/html/
+
