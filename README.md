@@ -32,7 +32,7 @@ Alma Linux 9 Minimal. Automatic configuration of the Web Server with Ansible.
 
 ## **Web Server**
 Debian 11. Apache Web Server, configured with Ansible. Hosted in a DMZ.
-#### Configuration files:
+#### Configuration files: check "Automatisation"; configured with Ansible.
 
 ## **DNS Server (External)**
 Alma Linux 9. External Bind DNS Server. Hosted in a DMZ.
