@@ -28,7 +28,7 @@ Alma Linux 9. Nagios Core to monitor the Domain Controller and the external DNS 
 
 ## **Automatisation**
 Alma Linux 9 Minimal. Automatic configuration of the Web Server with Ansible.
-#### Configuration files: (/etc/ansible/) [ansible.cfg](Ansible/ansible.cfg) [hosts](Ansible/hosts) [web-playbook.yaml](Ansible/web-plabook.yaml)
+#### Configuration files: (/etc/ansible/) [ansible.cfg](Ansible/ansible.cfg) [hosts](Ansible/hosts) [web-playbook.yaml](Ansible/web-playbook.yaml)
 
 ## **Web Server**
 Debian 11. Apache Web Server, configured with Ansible. Hosted in a DMZ.
