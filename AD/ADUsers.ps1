@@ -1,4 +1,4 @@
-#--- IMPORTATION DU .CSV ---#
+#--- CSV Import ---#
  
 $CSVPath = "utilisateurs.CSV"
 $lignes = Import-Csv -Path $CSVPath `
@@ -16,7 +16,7 @@ foreach ($ligne in $lignes)
   $mdp          = ConvertTo-SecureString -AsPlainText $Password -Force
  
   
-#--- VÉRIFICATION SI OU EXISTE ---#
+#--- Test if OU exists ---#
   $oucheck = [adsi]::Exists("LDAP://$Path")
  
   if ($oucheck -eq $true) {
@@ -26,12 +26,12 @@ foreach ($ligne in $lignes)
   else {
   Write-Host "$Path doesn't exist ( $oucheck )"
  
-#--- CRÉATION DES OU ---#
+#--- Ou cration ---#
   New-ADOrganizationalUnit -Name $Depart `
                            -Path "OU=DEPAT,DC=DEPAT,DC=LOCAL" `
                            -ProtectedFromAccidentalDeletion $false
  
-#--- CRÉATION DES GROUPES ---#
+#--- Groups creation ---#
   New-ADGroup  		-Name "$Depart" `
                     -GroupScope Global `
                     -GroupCategory Security `
@@ -39,7 +39,7 @@ foreach ($ligne in $lignes)
   }
  
  
-#--- CRÉATION DES UTILISATEURS ---#
+#--- Users creation ---#
   New-ADUser               -Name $Login `
                            -UserPrincipalName "$Login@depat.local" `
                            -DisplayName "$Prenom $Nom" `
@@ -53,7 +53,7 @@ foreach ($ligne in $lignes)
   Write-Host "Création de l'utilisateur $Login"
  
   
-#--- AJOUT DES DROITS ---#
+#--- Permissions configuration ---#
   if ($Depart -eq "Informatique") {
   Add-ADPrincipalGroupMembership -Identity $Login `
                                  -MemberOf $Depart,"Admins du domaine"
@@ -64,7 +64,7 @@ foreach ($ligne in $lignes)
   }
 
 
-#--- MAPPAGE DES FICHIERS PARTAGÉS ---#
+#--- Folder shares mapping ---#
   Set-ADUser -Identity $Login `
              -HomeDirectory \\fichiers\$Depart `
              -HomeDrive S:
