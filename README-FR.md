@@ -1,5 +1,5 @@
 # Projet final de l'AEC en gestion de réseaux et sécurité des systèmes
-## Propriétaires et administrateurs du système: De Pessemier Renaud et Patrizi Mauro
+## Propriétaires et administrateurs de système: De Pessemier Renaud et Patrizi Mauro
 ##### _Ce projet vise à tester les aptitudes et compétences acquises des candidats. Cela ne reflète pas nécessairement la manière la plus efficace ou la plus pratique de concevoir un réseau._
 
 ## **Contrôleur de domaine**
