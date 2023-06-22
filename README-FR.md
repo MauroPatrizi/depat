@@ -40,4 +40,4 @@ Alma Linux 9. Serveur Bind DNS externe. Hébergé dans une DMZ.
 
 ## **Router/Pare-feu**
 Pfsense 2.6.0. Pare-feu, passerelle par défaut et VPN vers 3 autres succursales externes.
-#### Configuration files: [[Configuration Pfsense](Pfsense/config-pfSense.depat.local-20230622164741.xml)
+#### Configuration files: [[Configuration Pfsense](PfSense/config-pfSense.depat.local-20230622164741.xml)
