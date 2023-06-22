@@ -11,7 +11,7 @@ Windows Server 2019. Serveur DHCP dédié aux utilisateurs du LAN.
 #### Fichiers de configuration:
 
 ## **File Server**
-Windows Server 2019. Serveur de fichiers pour partager un répertoire avec chaque groupe de sécurité des utilisateurs.
+Windows Server 2019. Serveur de fichiers avec partages des répertoires pour chaque groupe de sécurité des utilisateurs.
 #### Scripts et fichiers de configuration:
 
 ## **Virtualisation**

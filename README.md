@@ -11,7 +11,7 @@ Windows Server 2019. DHCP Server dedicated for the LAN Users.
 #### Configuration files:
 
 ## **File Server**
-Windows Server 2019. File Sharing Server to share a directory to each users' security group.
+Windows Server 2019. File Server with directory shares for each users' security group.
 #### Configuration files and scripts:
 
 ## **Virtualisation**
