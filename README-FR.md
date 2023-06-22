@@ -15,7 +15,7 @@ Windows Server 2019. Serveur de fichiers avec partages des répertoires pour cha
 #### Scripts et fichiers de configuration:
 
 ## **Virtualisation**
-ESXi 6.7. Hypvervisor accédant au stockage SAN. Hébergement de conteneurs Docker répliquant le serveur DNS interne en cas de fort trafic.
+ESXi 6.7. Hypverviseur accédant au stockage SAN. Hébergement de conteneurs Docker répliquant le serveur DNS interne en cas de fort trafic.
 #### Fichiers de configuration:
 
 ## **SAN**
