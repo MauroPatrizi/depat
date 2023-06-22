@@ -40,4 +40,4 @@ Alma Linux 9. External Bind DNS Server. Hosted in a DMZ.
 
 ## **Router/Firewall**
 Pfsense 2.6.0. Firewall, Default Gateway and VPN to 3 other external branches.
-#### Configuration files:
+#### Configuration files: [PfSense configuration](Pfsense/config-pfSense.depat.local-20230622164741.xml)
