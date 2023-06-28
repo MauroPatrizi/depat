@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# We had modify the Ubuntu BIND image to customize it according to our requirements.
+# We had edited the Ubuntu BIND image to customize it according to our requirements.
 
 docker container prune --force
 for i in {50..80}
