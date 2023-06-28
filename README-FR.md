@@ -12,7 +12,7 @@ Windows Server 2019. Serveur DHCP dédié aux utilisateurs du LAN.
 
 ## **Serveur de fichiers**
 Windows Server 2019. Serveur de fichiers avec partages des répertoires pour chaque groupe de sécurité des utilisateurs.
-#### Scripts et fichiers de configuration: [Script Powershell pour les permissions]
+#### Scripts et fichiers de configuration: [Script Powershell pour les permissions](FileServer/SMB_Icacls.ps1)
 
 ## **Virtualisation**
 ESXi 6.7. Hypverviseur accédant au stockage SAN. Hébergement de conteneurs Docker répliquant le serveur DNS interne en cas de fort trafic.
