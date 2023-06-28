@@ -12,7 +12,7 @@ Windows Server 2019. DHCP Server dedicated for the LAN Users.
 
 ## **File Server**
 Windows Server 2019. File Server with directory shares for each users' security group.
-#### Configuration files and scripts:
+#### Configuration files and scripts: [Powershell script for FileServer permissions](FileServer/SMB_Icacls.ps1)
 
 ## **Virtualisation**
 ESXi 6.7. Hypvervisor accessing the SAN storage. Hosting docker containers replicating the internal DNS server in case of high traffic.
@@ -39,5 +39,5 @@ Alma Linux 9. External Bind DNS Server. Hosted in a DMZ.
 #### Configuration files: [/etc/named.conf](Bind/named.conf), [/var/named/depat.com](Bind/depat.com), [/var/named/db.192.168.11](Bind/db.192.168.11)
 
 ## **Router/Firewall**
-Pfsense 2.6.0. Firewall, Default Gateway and VPN to 3 other external branches.
+Pfsense 2.6.0. Firewall, Default Gateway and IPSEC VPN to 3 other external branches.
 #### Configuration files: [PfSense XML configuration file](PfSense/config-pfSense.depat.local-20230622164741.xml)
