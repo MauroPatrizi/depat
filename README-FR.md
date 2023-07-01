@@ -19,7 +19,7 @@ ESXi 6.7. Hypverviseur accédant au stockage SAN. Hébergement de conteneurs Doc
 #### Fichiers de configuration: 
 
 ## **SAN**
-Alma Linux 9. Deux cibles iSCSI en répliquation pour une haute disponibilité et utilisant une adresse IP virtuelle. Réplication configurée avec drbd utilisant un RAID5 /dev/md0 et haute disponibilité configurée avec pacemaker et corosync (modules ocf:heartbeat:IPaddr2, ocf:heartbeat:iSCSITarget and  ocf:heartbeat:iSCSILogicalUnit)
+Alma Linux 9. Deux cibles iSCSI en répliquation pour une haute disponibilité et utilisant une adresse IP virtuelle. Réplication configurée avec drbd utilisant un RAID5 /dev/md0 et haute disponibilité configurée avec pacemaker et corosync (modules ocf_heartbeat_IPaddr2, ocf_heartbeat_iSCSITarget and  ocf_heartbeat_iSCSILogicalUnit)
 #### Fichiers de configuration: [/etc/target/saveconfig.json](SAN/targetcli.json) [/etc/drbd.d/drbd1.res](SAN/drbd1.res)
 
 ## **Surveillance**
