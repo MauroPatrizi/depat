@@ -20,7 +20,7 @@ ESXi 6.7. Hypvervisor accessing the SAN storage. Hosting docker containers repli
 
 ## **SAN**
 Alma Linux 9. Two iSCSI Targets replicating for high availability and using a virtual IP address. Replication configured with drbd using a RAID5 /dev/md0 and high availability configured with pacemaker and corosync (modules ocf_heartbeat_IPaddr2, ocf_heartbeat_iSCSITarget and  ocf_heartbeat_iSCSILogicalUnit)
-#### Configuration files: [/etc/target/saveconfig.json](SAN/targetcli.json) [/etc/drbd.d/drbd1.res](SAN/drbd1.res)
+#### Configuration files: [/etc/target/saveconfig.json](SAN/targetcli.json), [/etc/drbd.d/drbd1.res](SAN/drbd1.res)
 
 ## **Monitoring**
 Alma Linux 9. Nagios Core to monitor the Domain Controller and the external DNS server.
