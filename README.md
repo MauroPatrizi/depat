@@ -12,7 +12,7 @@ Windows Server 2019. DHCP Server dedicated for the LAN Users.
 
 ## **File Server**
 Windows Server 2019. File Server with directory shares for each users' security group.
-#### Scripts: [Powershell script for FileServer permissions](FileServer/SMB_Icacls.ps1)
+#### Script: [Powershell script for FileServer permissions](FileServer/SMB_Icacls.ps1)
 
 ## **Virtualisation**
 ESXi 6.7. Hypvervisor accessing the SAN storage. Hosting docker containers replicating the internal DNS server in case of high traffic.
