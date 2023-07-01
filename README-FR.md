@@ -4,23 +4,23 @@
 
 ## **Contrôleur de domaine**
 Windows Server 2019. Active Directory et serveur DNS interne. RODC disponible dans les succursales externes, répliquant les services AD et DNS internes.
-#### Scripts et fichiers de configuration: [Script Powershell pour la configuration des utilisateurs](AD/ADUsers.ps1)
+#### Script: [Script Powershell pour la configuration des utilisateurs](AD/ADUsers.ps1)
 
 ## **DHCP**
 Windows Server 2019. Serveur DHCP dédié aux utilisateurs du LAN.
-#### Fichiers de configuration: [Script Powershell pour la configuration DHCP](DHCP/DHCPscope.ps1)
+#### Script: [Script Powershell pour la configuration DHCP](DHCP/DHCPscope.ps1)
 
 ## **Serveur de fichiers**
 Windows Server 2019. Serveur de fichiers avec partages des répertoires pour chaque groupe de sécurité des utilisateurs.
-#### Scripts et fichiers de configuration: [Script Powershell pour la configuration des permissions](FileServer/SMB_Icacls.ps1)
+#### Script: [Script Powershell pour la configuration des permissions](FileServer/SMB_Icacls.ps1)
 
 ## **Virtualisation**
 ESXi 6.7. Hypverviseur accédant au stockage SAN. Hébergement de conteneurs Docker répliquant le serveur DNS interne en cas de fort trafic.
-#### Fichiers de configuration:
+#### Fichiers de configuration: 
 
 ## **SAN**
-Alma Linux 9. Deux cibles iSCSI en répliquation pour une haute disponibilité et utilisant une adresse IP virtuelle.
-#### Fichiers de configuration: [targetcli.json](SAN/targetcli.json)
+Alma Linux 9. Deux cibles iSCSI en répliquation pour une haute disponibilité et utilisant une adresse IP virtuelle. Réplication configurée avec drbd utilisant un RAID5 /dev/md0 et haute disponibilité configurée avec pacemaker et corosync (modules ocf:heartbeat:IPaddr2, ocf:heartbeat:iSCSITarget and  ocf:heartbeat:iSCSILogicalUnit)
+#### Fichiers de configuration: [/etc/target/saveconfig.json](SAN/targetcli.json) [/etc/drbd.d/drbd1.res](SAN/drbd1.res)
 
 ## **Surveillance**
 Alma Linux 9. Nagios Core pour surveiller le contrôleur de domaine et le DNS externe.

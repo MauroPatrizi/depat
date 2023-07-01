@@ -4,23 +4,23 @@
 
 ## **Domain Controller**
 Windows Server 2019. Active Directory and internal DNS server. RODC available in the external branches, replicating AD and internal DNS services.
-#### Configuration files and scripts: [Powershell script for users configuration](AD/ADUsers.ps1)
+#### Script: [Powershell script for users configuration](AD/ADUsers.ps1)
 
 ## **DHCP**
 Windows Server 2019. DHCP Server dedicated for the LAN Users.
-#### Configuration files: [Powershell script for DHCP configuration](DHCP/DHCPscope.ps1)
+#### Script: [Powershell script for DHCP configuration](DHCP/DHCPscope.ps1)
 
 ## **File Server**
 Windows Server 2019. File Server with directory shares for each users' security group.
-#### Configuration files and scripts: [Powershell script for FileServer permissions](FileServer/SMB_Icacls.ps1)
+#### Scripts: [Powershell script for FileServer permissions](FileServer/SMB_Icacls.ps1)
 
 ## **Virtualisation**
 ESXi 6.7. Hypvervisor accessing the SAN storage. Hosting docker containers replicating the internal DNS server in case of high traffic.
 #### Configuration files:
 
 ## **SAN**
-Alma Linux 9. Two iSCSI Targets replicating for high availability and using a virtual IP address.
-#### Configuration files: [targetcli.json](SAN/targetcli.json)
+Alma Linux 9. Two iSCSI Targets replicating for high availability and using a virtual IP address. Replication configured with drbd using a RAID5 /dev/md0 and high availability configured with pacemaker and corosync (modules ocf:heartbeat:IPaddr2, ocf:heartbeat:iSCSITarget and  ocf:heartbeat:iSCSILogicalUnit)
+#### Configuration files: [/etc/target/saveconfig.json](SAN/targetcli.json) [/etc/drbd.d/drbd1.res](SAN/drbd1.res)
 
 ## **Monitoring**
 Alma Linux 9. Nagios Core to monitor the Domain Controller and the external DNS server.
