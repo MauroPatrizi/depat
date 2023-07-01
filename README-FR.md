@@ -16,7 +16,7 @@ Windows Server 2019. Serveur de fichiers avec partages des répertoires pour cha
 
 ## **Virtualisation**
 ESXi 6.7. Hypverviseur accédant au stockage SAN. Hébergement de conteneurs Docker répliquant le serveur DNS interne en cas de fort trafic.
-#### Fichiers de configuration: 
+#### Configuration: VM Alma Linux 9 dans laquelle on a créé une image docker personnalisée (docker commit) à partir d'une image Ubuntu configurée pour répliquer le DNS interne. 
 
 ## **SAN**
 Alma Linux 9. Deux cibles iSCSI en répliquation pour une haute disponibilité et utilisant une adresse IP virtuelle. Réplication configurée avec drbd utilisant un RAID5 /dev/md0 et haute disponibilité configurée avec pacemaker et corosync (modules ocf_heartbeat_IPaddr2, ocf_heartbeat_iSCSITarget and  ocf_heartbeat_iSCSILogicalUnit)

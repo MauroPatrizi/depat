@@ -16,7 +16,7 @@ Windows Server 2019. File Server with directory shares for each users' security 
 
 ## **Virtualisation**
 ESXi 6.7. Hypvervisor accessing the SAN storage. Hosting docker containers replicating the internal DNS server in case of high traffic.
-#### Configuration files:
+#### Configuration: Alma Linux 9 VM in which we created a custom docker image (docker commit) from an Ubuntu image configured to replicate the internal DNS.
 
 ## **SAN**
 Alma Linux 9. Two iSCSI Targets replicating for high availability and using a virtual IP address. Replication configured with drbd using a RAID5 /dev/md0 and high availability configured with pacemaker and corosync (modules ocf_heartbeat_IPaddr2, ocf_heartbeat_iSCSITarget and  ocf_heartbeat_iSCSILogicalUnit)
