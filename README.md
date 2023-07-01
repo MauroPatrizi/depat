@@ -19,7 +19,7 @@ ESXi 6.7. Hypvervisor accessing the SAN storage. Hosting docker containers repli
 #### Configuration files:
 
 ## **SAN**
-Alma Linux 9. Two iSCSI Targets replicating for high availability and using a virtual IP address. Replication configured with drbd using a RAID5 /dev/md0 and high availability configured with pacemaker and corosync (modules ocf:heartbeat:IPaddr2, ocf:heartbeat:iSCSITarget and  ocf:heartbeat:iSCSILogicalUnit)
+Alma Linux 9. Two iSCSI Targets replicating for high availability and using a virtual IP address. Replication configured with drbd using a RAID5 /dev/md0 and high availability configured with pacemaker and corosync (modules "ocf:heartbeat:IPaddr2", "ocf:heartbeat:iSCSITarget" and  "ocf:heartbeat:iSCSILogicalUnit")
 #### Configuration files: [/etc/target/saveconfig.json](SAN/targetcli.json) [/etc/drbd.d/drbd1.res](SAN/drbd1.res)
 
 ## **Monitoring**
