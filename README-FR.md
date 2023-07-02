@@ -15,8 +15,8 @@ Windows Server 2019. Serveur de fichiers avec partages des répertoires pour cha
 #### Script: [Script Powershell pour la configuration des permissions](FileServer/SMB_Icacls.ps1)
 
 ## **Virtualisation**
-ESXi 6.7. Hyperviseur avec un datastore VMFS utilisant le stockage SAN.
-#### VM configurées dans le serveur : Alma Linux 9 avec une image docker personnalisée (docker commit) à partir d'une image Ubuntu configurée pour répliquer le DNS interne. Image personnalisée utilisée pour ouvrir plusieurs conteneurs en cas de trafic élevé.
+ESXi 6.7. Hyperviseur avec un datastore VMFS utilisant le stockage SAN. VM configurées dans le serveur: Alma Linux 9 avec une image docker personnalisée (docker commit) à partir d'une image Ubuntu configurée pour répliquer le DNS interne. Image personnalisée utilisée avec un script pour ouvrir plusieurs conteneurs en cas de trafic élevé.
+#### Script: [Script bash pour ouvrir les conteneurs docker](Virtualisation/ContainerScript.sh)
 
 ## **SAN**
 Alma Linux 9. Deux cibles iSCSI en répliquation pour une haute disponibilité et utilisant une adresse IP virtuelle. Réplication configurée avec drbd utilisant un RAID5 /dev/md0 et haute disponibilité configurée avec pacemaker et corosync (modules ocf_heartbeat_IPaddr2, ocf_heartbeat_iSCSITarget and  ocf_heartbeat_iSCSILogicalUnit)
