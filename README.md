@@ -15,8 +15,8 @@ Windows Server 2019. File Server with directory shares for each users' security 
 #### Script: [Powershell script for FileServer permissions](FileServer/SMB_Icacls.ps1)
 
 ## **Virtualisation**
-ESXi 6.7. Hypvervisor accessing the SAN storage. Hosting docker containers replicating the internal DNS server in case of high traffic.
-#### Configuration: Alma Linux 9 VM in which we created a custom docker image (docker commit) from an Ubuntu image configured to replicate the internal DNS.
+ESXi 6.7. Hypvervisor with a VMFS datastore using the SAN storage.
+#### VMs configured in the server: Alma Linux 9 with a custom docker image (docker commit) from an Ubuntu image configured to replicate the internal DNS. Custom image used to open multiple containers in case of high traffic.
 
 ## **SAN**
 Alma Linux 9. Two iSCSI Targets replicating for high availability and using a virtual IP address. Replication configured with drbd using a RAID5 /dev/md0 and high availability configured with pacemaker and corosync (modules ocf_heartbeat_IPaddr2, ocf_heartbeat_iSCSITarget and  ocf_heartbeat_iSCSILogicalUnit)
