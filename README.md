@@ -2,6 +2,9 @@
 ## Owners and System Administrators: De Pessemier Renaud and Patrizi Mauro
 ##### _This project is meant to test the acquired skills and competences of the candidates. It doesn't necessarily reflect the most efficient or practical way of designing a network._
 
+## **Network Diagram** 
+![Network Diagram](https://github.com/maptriz/depat/blob/main/network.png)
+
 ## **Domain Controller**
 Windows Server 2019. Active Directory and internal DNS server. RODC available in the external branches, replicating AD and internal DNS services.
 #### Script: [Powershell script for users configuration](AD/ADUsers.ps1)
