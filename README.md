@@ -1,6 +1,7 @@
 # Final Project for the AEC "Network management and systems security"
 ## Owners and System Administrators: De Pessemier Renaud and Patrizi Mauro
 ##### _This project is meant to test the acquired skills and competences of the candidates. It doesn't necessarily reflect the most efficient or practical way of designing a network._
+[ReadMe en français](README-FR.md)
 
 ## **Network Diagram** 
 ![Network Diagram](https://github.com/maptriz/depat/blob/main/network.png)
